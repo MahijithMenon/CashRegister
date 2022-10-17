@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div>
+         <h1>Cash Register Manager</h1>  
+         <p>Enter the amount of bill the user has to pay and the amount given by the user.</p>
+        </div>
+        <div class="inputPage">
+            <label for="BillAmt">Bill Amount:</label>
+            <input type="number" id="BillAmt">
+            <label for="CashGiven">Cash Given</label>
+            <input type="number" id="CashGiven">
+            <p id="errormessage"></p>
+            <button id="check">Check</button>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>No.of Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
