@@ -12,7 +12,7 @@ check.addEventListener('click',function(){
    calculateChange(calculateRemianing);
     }
     else{
-        errorMsg.innerText="You need to take more Cash";
+        errorMsg.innerText="You need to Give more Cash";
     }
     }
     else{
@@ -20,10 +20,10 @@ check.addEventListener('click',function(){
     }
 })
 function calculateChange(amt){
+    errorMsg.innerText=`Remaining Cash to be given back:-${amt}`;
  for(let i=0;i<availableNotes.length;i++){
  const numberOfNotes = Math.trunc(amt/availableNotes[i])
  amt%=availableNotes[i];
  noOfNotes[i].innerText = numberOfNotes;
  }
- console.log("hello");
 }
