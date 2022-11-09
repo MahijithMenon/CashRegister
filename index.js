@@ -6,9 +6,10 @@ result=document.getElementById('result')
 noOfNotes=document.querySelectorAll('.no-of-notes');
 availableNotes=[2000,500,200,100,50,10,5,1];
 check.addEventListener('click',function(){
-    if(billAmt.value>0 && cashGiven.value>0){
-    if(cashGiven.value>=billAmt.value){
+    if(Number(billAmt.value>0) && Number(cashGiven.value>0)){
+    if(Number(cashGiven.value)>=Number(billAmt.value)){
    const calculateRemianing=cashGiven.value-billAmt.value;
+   console.log(typeof calculateRemianing)
    calculateChange(calculateRemianing);
     }
     else{
